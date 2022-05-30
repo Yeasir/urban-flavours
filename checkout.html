@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Urban Flavours</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.theme.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css"/>
+    <link rel="stylesheet" href="css/woocommerce.css"/>
+    <link rel="stylesheet" href="css/woocommerce-layout.css"/>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700i,900,900i&display=swap&subset=cyrillic,greek,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,300,300i,400,400i,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/elegant-icons.min.css"/>
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css"/>
+
+    <link rel="stylesheet" href="css/pe-icon-social.css">
+    <link rel="stylesheet" href="css/social-style.min.css">
+
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="default-page  cart-page page-template-default page page-id-6 logged-in admin-bar woocommerce-cart woocommerce-page woocommerce-js customize-support">
+<div class="wrapper">
+    <!-- /.header start  -->
+    <header class="header inner-header">
+
+        <nav class="navbar  navbar-expand-md custom-nav ">
+            <a href="index.html" class="navbar-brand mr-0">URBAN FLAVOURS</a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="pe-7s-menu  pe-2x pe-va white-text"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100"
+                 id="collapsingNavbar2">
+                <ul class="navbar-nav mx-auto menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service areas </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cannabis news </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rewards.html">Rewards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav flex-row  flex-nowrap user-menu">
+                    <li class="nav-item"><a class="nav-link" href=""><i class="pe-7s-search  pe-2x pe-va mr-1"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="pe-7s-user  pe-2x pe-va"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="pe-7s-cart  pe-2x pe-va"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- /.header -->
+    <!-- /.main start  -->
+    <main class="main">
+        <!-- sing up top section -->
+        <div class="sing-up-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="sing-up-nvigation cart-nav">
+                            <ul>
+                                <li><a href="#" title="Registration">SHOPPING CART</a></li>
+                                <li><a href="#" title="Upload Id" class="active">CHECKOUT</a></li>
+                                <li><a href="#" title="Upload Photo">ORDER COMPLETED</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sing up top section -->
+
+        <section class="checkout-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="customer">Returning customer ? <a href="" class="green-text">Click here</a> to login</p>
+                    </div>
+                </div>
+
+                <div class="delivery-address">
+                    <div class="woocommerce">
+                        <div class="woocommerce-notices-wrapper"></div>
+                        <form name="checkout" method="post" class="checkout woocommerce-checkout"
+                              action="" enctype="multipart/form-data"
+                              novalidate="novalidate">
+                            <div class="row">
+
+                                <div class="col-lg-8 col-md-7 col-sm-12">
+                                    <div class="woocommerce-billing-fields">
+
+                                        <h6 class="black-text text-uppercase text-center ">DELIVERY ADDRESS</h6>
+
+
+                                        <div class="woocommerce-billing-fields__field-wrapper">
+                                            <p class="form-row  validate-required align-items-center"
+                                               id="billing_first_name_field" data-priority="10"><label
+                                                    for="billing_first_name" class="">First name&nbsp;<abbr
+                                                    class="required" title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="text"
+                                                                                             class="input-text "
+                                                                                             name="billing_first_name"
+                                                                                             id="billing_first_name"
+                                                                                             placeholder="" value=""
+                                                                                             autocomplete="given-name"></span>
+                                            </p>
+                                            <p class="form-row  validate-required"
+                                               id="billing_last_name_field" data-priority="20"><label
+                                                    for="billing_last_name" class="">Last name&nbsp;<abbr
+                                                    class="required" title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="text"
+                                                                                             class="input-text "
+                                                                                             name="billing_last_name"
+                                                                                             id="billing_last_name"
+                                                                                             placeholder="" value=""
+                                                                                             autocomplete="family-name"></span>
+                                            </p>
+
+                                            <p class="form-row form-row-wide validate-required validate-phone"
+                                               id="billing_phone_field" data-priority="100"><label for="billing_phone"
+                                                                                                   class="">Phone&nbsp;<abbr
+                                                    class="required" title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="tel"
+                                                                                             class="input-text "
+                                                                                             name="billing_phone"
+                                                                                             id="billing_phone"
+                                                                                             placeholder="" value=""
+                                                                                             autocomplete="tel"></span>
+                                            </p>
+                                            <p class="form-row form-row-wide validate-required validate-email"
+                                               id="billing_email_field" data-priority="110"><label for="billing_email"
+                                                                                                   class="">Email
+                                                address&nbsp;<abbr class="required"
+                                                                   title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="email"
+                                                                                             class="input-text "
+                                                                                             name="billing_email"
+                                                                                             id="billing_email"
+                                                                                             placeholder=""
+                                                                                             value=""
+                                                                                             autocomplete="email username"></span>
+                                            </p>
+
+                                            <p class="form-row form-row-wide address-field update_totals_on_change validate-required"
+                                               id="billing_country_field" data-priority="40"><label
+                                                    for="billing_country" class="">Country&nbsp;<abbr class="required"
+                                                                                                      title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><select name="billing_country"
+                                                                                              id="billing_country"
+                                                                                              class="country_to_state country_select  select2-hidden-accessible"
+                                                                                              autocomplete="country"
+                                                                                              tabindex="-1"
+                                                                                              aria-hidden="true"><option
+                                                    value="">Select a country…</option><option
+                                                    value="AX">Åland Islands</option><option
+                                                    value="AF">Afghanistan</option><option value="AL">Albania</option><option
+                                                    value="DZ">Algeria</option><option
+                                                    value="AS">American Samoa</option><option
+                                                    value="AD">Andorra</option><option value="AO">Angola</option><option
+                                                    value="AI">Anguilla</option><option value="AQ">Antarctica</option><option
+                                                    value="AG">Antigua and Barbuda</option><option
+                                                    value="AR">Argentina</option><option value="AM">Armenia</option><option
+                                                    value="AW">Aruba</option><option value="AU">Australia</option><option
+                                                    value="AT">Austria</option><option value="AZ">Azerbaijan</option><option
+                                                    value="BS">Bahamas</option><option value="BH">Bahrain</option><option
+                                                    value="BD" selected="selected">Bangladesh</option><option
+                                                    value="BB">Barbados</option><option value="BY">Belarus</option><option
+                                                    value="PW">Belau</option><option value="BE">Belgium</option><option
+                                                    value="BZ">Belize</option><option value="BJ">Benin</option><option
+                                                    value="BM">Bermuda</option><option value="BT">Bhutan</option><option
+                                                    value="BO">Bolivia</option><option value="BQ">Bonaire, Saint Eustatius and Saba</option><option
+                                                    value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option
+                                                    value="BV">Bouvet Island</option><option value="BR">Brazil</option><option
+                                                    value="IO">British Indian Ocean Territory</option><option
+                                                    value="VG">British Virgin Islands</option><option
+                                                    value="BN">Brunei</option><option value="BG">Bulgaria</option><option
+                                                    value="BF">Burkina Faso</option><option value="BI">Burundi</option><option
+                                                    value="KH">Cambodia</option><option value="CM">Cameroon</option><option
+                                                    value="CA">Canada</option><option value="CV">Cape Verde</option><option
+                                                    value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option
+                                                    value="TD">Chad</option><option value="CL">Chile</option><option
+                                                    value="CN">China</option><option
+                                                    value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option
+                                                    value="CO">Colombia</option><option value="KM">Comoros</option><option
+                                                    value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option
+                                                    value="CK">Cook Islands</option><option
+                                                    value="CR">Costa Rica</option><option value="HR">Croatia</option><option
+                                                    value="CU">Cuba</option><option value="CW">Curaçao</option><option
+                                                    value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option
+                                                    value="DK">Denmark</option><option value="DJ">Djibouti</option><option
+                                                    value="DM">Dominica</option><option
+                                                    value="DO">Dominican Republic</option><option
+                                                    value="EC">Ecuador</option><option value="EG">Egypt</option><option
+                                                    value="SV">El Salvador</option><option
+                                                    value="GQ">Equatorial Guinea</option><option
+                                                    value="ER">Eritrea</option><option value="EE">Estonia</option><option
+                                                    value="ET">Ethiopia</option><option
+                                                    value="FK">Falkland Islands</option><option
+                                                    value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option
+                                                    value="FI">Finland</option><option value="FR">France</option><option
+                                                    value="GF">French Guiana</option><option
+                                                    value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option
+                                                    value="GA">Gabon</option><option value="GM">Gambia</option><option
+                                                    value="GE">Georgia</option><option value="DE">Germany</option><option
+                                                    value="GH">Ghana</option><option value="GI">Gibraltar</option><option
+                                                    value="GR">Greece</option><option value="GL">Greenland</option><option
+                                                    value="GD">Grenada</option><option value="GP">Guadeloupe</option><option
+                                                    value="GU">Guam</option><option value="GT">Guatemala</option><option
+                                                    value="GG">Guernsey</option><option value="GN">Guinea</option><option
+                                                    value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option
+                                                    value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option
+                                                    value="HN">Honduras</option><option value="HK">Hong Kong</option><option
+                                                    value="HU">Hungary</option><option value="IS">Iceland</option><option
+                                                    value="IN">India</option><option value="ID">Indonesia</option><option
+                                                    value="IR">Iran</option><option value="IQ">Iraq</option><option
+                                                    value="IE">Ireland</option><option value="IM">Isle of Man</option><option
+                                                    value="IL">Israel</option><option value="IT">Italy</option><option
+                                                    value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option
+                                                    value="JP">Japan</option><option value="JE">Jersey</option><option
+                                                    value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option
+                                                    value="KE">Kenya</option><option value="KI">Kiribati</option><option
+                                                    value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option
+                                                    value="LA">Laos</option><option value="LV">Latvia</option><option
+                                                    value="LB">Lebanon</option><option value="LS">Lesotho</option><option
+                                                    value="LR">Liberia</option><option value="LY">Libya</option><option
+                                                    value="LI">Liechtenstein</option><option
+                                                    value="LT">Lithuania</option><option value="LU">Luxembourg</option><option
+                                                    value="MO">Macao S.A.R., China</option><option
+                                                    value="MK">Macedonia</option><option value="MG">Madagascar</option><option
+                                                    value="MW">Malawi</option><option value="MY">Malaysia</option><option
+                                                    value="MV">Maldives</option><option value="ML">Mali</option><option
+                                                    value="MT">Malta</option><option
+                                                    value="MH">Marshall Islands</option><option
+                                                    value="MQ">Martinique</option><option value="MR">Mauritania</option><option
+                                                    value="MU">Mauritius</option><option value="YT">Mayotte</option><option
+                                                    value="MX">Mexico</option><option value="FM">Micronesia</option><option
+                                                    value="MD">Moldova</option><option value="MC">Monaco</option><option
+                                                    value="MN">Mongolia</option><option value="ME">Montenegro</option><option
+                                                    value="MS">Montserrat</option><option value="MA">Morocco</option><option
+                                                    value="MZ">Mozambique</option><option value="MM">Myanmar</option><option
+                                                    value="NA">Namibia</option><option value="NR">Nauru</option><option
+                                                    value="NP">Nepal</option><option value="NL">Netherlands</option><option
+                                                    value="NC">New Caledonia</option><option
+                                                    value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option
+                                                    value="NE">Niger</option><option value="NG">Nigeria</option><option
+                                                    value="NU">Niue</option><option value="NF">Norfolk Island</option><option
+                                                    value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option
+                                                    value="NO">Norway</option><option value="OM">Oman</option><option
+                                                    value="PK">Pakistan</option><option
+                                                    value="PS">Palestinian Territory</option><option
+                                                    value="PA">Panama</option><option
+                                                    value="PG">Papua New Guinea</option><option
+                                                    value="PY">Paraguay</option><option value="PE">Peru</option><option
+                                                    value="PH">Philippines</option><option value="PN">Pitcairn</option><option
+                                                    value="PL">Poland</option><option value="PT">Portugal</option><option
+                                                    value="PR">Puerto Rico</option><option value="QA">Qatar</option><option
+                                                    value="RE">Reunion</option><option value="RO">Romania</option><option
+                                                    value="RU">Russia</option><option value="RW">Rwanda</option><option
+                                                    value="ST">São Tomé and Príncipe</option><option value="BL">Saint Barthélemy</option><option
+                                                    value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option
+                                                    value="LC">Saint Lucia</option><option value="SX">Saint Martin (Dutch part)</option><option
+                                                    value="MF">Saint Martin (French part)</option><option value="PM">Saint Pierre and Miquelon</option><option
+                                                    value="VC">Saint Vincent and the Grenadines</option><option
+                                                    value="WS">Samoa</option><option value="SM">San Marino</option><option
+                                                    value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option
+                                                    value="RS">Serbia</option><option value="SC">Seychelles</option><option
+                                                    value="SL">Sierra Leone</option><option
+                                                    value="SG">Singapore</option><option value="SK">Slovakia</option><option
+                                                    value="SI">Slovenia</option><option
+                                                    value="SB">Solomon Islands</option><option
+                                                    value="SO">Somalia</option><option value="ZA">South Africa</option><option
+                                                    value="GS">South Georgia/Sandwich Islands</option><option
+                                                    value="KR">South Korea</option><option
+                                                    value="SS">South Sudan</option><option value="ES">Spain</option><option
+                                                    value="LK">Sri Lanka</option><option value="SD">Sudan</option><option
+                                                    value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option
+                                                    value="SZ">Swaziland</option><option value="SE">Sweden</option><option
+                                                    value="CH">Switzerland</option><option value="SY">Syria</option><option
+                                                    value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option
+                                                    value="TZ">Tanzania</option><option value="TH">Thailand</option><option
+                                                    value="TL">Timor-Leste</option><option value="TG">Togo</option><option
+                                                    value="TK">Tokelau</option><option value="TO">Tonga</option><option
+                                                    value="TT">Trinidad and Tobago</option><option
+                                                    value="TN">Tunisia</option><option value="TR">Turkey</option><option
+                                                    value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option
+                                                    value="TV">Tuvalu</option><option value="UG">Uganda</option><option
+                                                    value="UA">Ukraine</option><option
+                                                    value="AE">United Arab Emirates</option><option value="GB">United Kingdom (UK)</option><option
+                                                    value="US">United States (US)</option><option value="UM">United States (US) Minor Outlying Islands</option><option
+                                                    value="VI">United States (US) Virgin Islands</option><option
+                                                    value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option
+                                                    value="VU">Vanuatu</option><option value="VA">Vatican</option><option
+                                                    value="VE">Venezuela</option><option value="VN">Vietnam</option><option
+                                                    value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option
+                                                    value="YE">Yemen</option><option value="ZM">Zambia</option><option
+                                                    value="ZW">Zimbabwe</option></select><span
+                                                    class="select2 select2-container select2-container--default"
+                                                    dir="ltr" style="width: 100%;"></span></span></p>
+                                            <p class="form-row form-row-wide address-field validate-required"
+                                               id="billing_address_1_field" data-priority="50"><label
+                                                    for="billing_address_1" class="">Address&nbsp;<abbr
+                                                    class="required" title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="text"
+                                                                                             class="input-text "
+                                                                                             name="billing_address_1"
+                                                                                             id="billing_address_1"
+                                                                                             placeholder="Street Address"
+                                                                                             value=""
+                                                                                             ></span>
+                                                <span
+                                                        class="woocommerce-input-wrapper"><input type="text"
+                                                                                                 class="input-text "
+                                                                                                 name="billing_address_2"
+                                                                                                 id="billing_address_2"
+                                                                                                 placeholder="Apartment, suite, unite ect (optinal)"
+                                                                                                 value="">
+
+                                                                                           </span>
+                                            </p>
+
+                                            <p class="form-row form-row-wide address-field validate-required"
+                                               id="billing_city_field" data-priority="70"
+                                               data-o_class="form-row form-row-wide address-field validate-required">
+                                                <label for="billing_city" class="">Town / City&nbsp;<abbr
+                                                        class="required" title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><input type="text"
+                                                                                             class="input-text "
+                                                                                             name="billing_city"
+                                                                                             id="billing_city"
+                                                                                             placeholder="" value=""
+                                                                                             autocomplete="address-level2"></span>
+                                            </p>
+                                            <p class="form-row form-row-wide address-field validate-required validate-state"
+                                               id="billing_state_field" data-priority="80"
+                                               data-o_class="form-row form-row-wide address-field validate-required validate-state">
+                                                <label for="billing_state" class="">STATE <abbr class="required"
+                                                                                                title="required">*</abbr></label><span
+                                                    class="woocommerce-input-wrapper"><select name="billing_state"
+                                                                                              id="billing_state"
+                                                                                              class="state_select  select2-hidden-accessible"
+                                                                                              autocomplete="address-level1"
+                                                                                              data-placeholder=""
+                                                                                              tabindex="-1"
+                                                                                              aria-hidden="true">
+						<option value="">Select an option…</option><option value="BD-05">Bagerhat</option><option
+                                                    value="BD-01">Bandarban</option><option
+                                                    value="BD-02">Barguna</option><option
+                                                    value="BD-06">Barishal</option><option value="BD-07">Bhola</option><option
+                                                    value="BD-03">Bogura</option><option
+                                                    value="BD-04">Brahmanbaria</option><option
+                                                    value="BD-09">Chandpur</option><option
+                                                    value="BD-10">Chattogram</option><option
+                                                    value="BD-12">Chuadanga</option><option
+                                                    value="BD-11">Cox's Bazar</option><option
+                                                    value="BD-08">Cumilla</option><option value="BD-13">Dhaka</option><option
+                                                    value="BD-14">Dinajpur</option><option
+                                                    value="BD-15">Faridpur </option><option value="BD-16">Feni</option><option
+                                                    value="BD-19">Gaibandha</option><option
+                                                    value="BD-18">Gazipur</option><option
+                                                    value="BD-17">Gopalganj</option><option
+                                                    value="BD-20">Habiganj</option><option
+                                                    value="BD-21">Jamalpur</option><option
+                                                    value="BD-22">Jashore</option><option
+                                                    value="BD-25">Jhalokati</option><option
+                                                    value="BD-23">Jhenaidah</option><option
+                                                    value="BD-24">Joypurhat</option><option
+                                                    value="BD-29">Khagrachhari</option><option
+                                                    value="BD-27">Khulna</option><option
+                                                    value="BD-26">Kishoreganj</option><option
+                                                    value="BD-28">Kurigram</option><option
+                                                    value="BD-30">Kushtia</option><option
+                                                    value="BD-31">Lakshmipur</option><option
+                                                    value="BD-32">Lalmonirhat</option><option
+                                                    value="BD-36">Madaripur</option><option
+                                                    value="BD-37">Magura</option><option
+                                                    value="BD-33">Manikganj </option><option
+                                                    value="BD-39">Meherpur</option><option
+                                                    value="BD-38">Moulvibazar</option><option
+                                                    value="BD-35">Munshiganj</option><option
+                                                    value="BD-34">Mymensingh</option><option
+                                                    value="BD-48">Naogaon</option><option value="BD-43">Narail</option><option
+                                                    value="BD-40">Narayanganj</option><option
+                                                    value="BD-42">Narsingdi</option><option
+                                                    value="BD-44">Natore</option><option
+                                                    value="BD-45">Nawabganj</option><option
+                                                    value="BD-41">Netrakona</option><option
+                                                    value="BD-46">Nilphamari</option><option
+                                                    value="BD-47">Noakhali</option><option value="BD-49">Pabna</option><option
+                                                    value="BD-52">Panchagarh</option><option
+                                                    value="BD-51">Patuakhali</option><option
+                                                    value="BD-50">Pirojpur</option><option
+                                                    value="BD-53">Rajbari</option><option
+                                                    value="BD-54">Rajshahi</option><option
+                                                    value="BD-56">Rangamati</option><option
+                                                    value="BD-55">Rangpur</option><option
+                                                    value="BD-58">Satkhira</option><option
+                                                    value="BD-62">Shariatpur</option><option
+                                                    value="BD-57">Sherpur</option><option
+                                                    value="BD-59">Sirajganj</option><option
+                                                    value="BD-61">Sunamganj</option><option
+                                                    value="BD-60">Sylhet</option><option value="BD-63">Tangail</option><option
+                                                    value="BD-64">Thakurgaon</option></select><span
+                                                    class="select2 select2-container select2-container--default"
+                                                    dir="ltr" style="width: 100%;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-labelledby="select2-billing_state-container"
+                                                    role="combobox"><span class="select2-selection__rendered"
+                                                                          id="select2-billing_state-container"
+                                                                          role="textbox" aria-readonly="true"><span
+                                                    class="select2-selection__placeholder"></span></span><span
+                                                    class="select2-selection__arrow" role="presentation"><b
+                                                    role="presentation"></b></span></span></span><span
+                                                    class="dropdown-wrapper" aria-hidden="true"></span></span></span>
+                                            </p>
+                                            <p class="form-row form-row-wide address-field validate-postcode mb-55"
+                                               id="billing_postcode_field" data-priority="90"
+                                               data-o_class="form-row form-row-wide address-field validate-postcode">
+                                                <label for="billing_postcode" class="">Postcode / ZIP&nbsp;<abbr
+                                                        class="required"
+                                                        title="required">*</abbr> </label>
+                                                <span class="woocommerce-input-wrapper"><input type="text"
+                                                                                               class="input-text "
+                                                                                               name="billing_postcode"
+                                                                                               id="billing_postcode"
+                                                                                               placeholder="" value=""
+                                                                                               autocomplete="postal-code"></span>
+                                            </p>
+
+                                            <p class="form-row form-row-wide order-note "
+                                                data-priority="90"
+                                               data-o_class="form-row form-row-wide address-field validate-postcode">
+                                                <label for="order-note" class="">ORDER NOTES </label>
+                                                <span class="woocommerce-input-wrapper">
+                                                   <textarea  id="order-note" rows="5" cols="10"></textarea>
+
+                                                </span>
+                                            </p>
+                                            <p class="form-row form-row-wide crate-account validate-postcode "
+                                               id="crate-account">
+
+                                                <span class="woocommerce-input-wrapper">
+                                                    <input type="checkbox"
+                                                                                               class="input-text "
+                                                                                               name="billing_postcode"
+                                                                                               id="crate-accounts"
+                                                                                               placeholder="" value=""
+                                                                                               autocomplete="postal-code">
+                                                    <label for="crate-accounts" class="">Create an account?&nbsp; </label>
+                                                </span>
+                                                <br>
+                                                Create an account by entering the information below. If you are a returning customer please login at the top of the page
+
+                                            </p>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 col-md-5 col-sm-12">
+                                    <div class="woocommerce-billing-fields">
+
+                                    <h6 class="black-text text-uppercase text-center order ">Your order</h6>
+
+
+                                    <div id="order_review" class="woocommerce-checkout-review-order">
+                                        <table class="shop_table woocommerce-checkout-review-order-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="product-name">Product</th>
+                                                <th class="product-total">Total</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="cart_item">
+                                                <td class="product-name">
+
+                                                    GSC - Dime Bag   		 <strong class="product-quantity"> - 1/8 -</strong>
+                                                </td>
+                                                <td class="product-total">
+                                                    <span class="woocommerce-Price-amount amount"><span
+                                                            class="woocommerce-Price-currencySymbol">$</span>15.00</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td class="product-name">
+                                                    Lambo OG 16.28 THC <strong class="product-quantity"> - OZ - </strong>
+                                                </td>
+                                                <td class="product-total">
+                                                    <span class="woocommerce-Price-amount amount"><span
+                                                            class="woocommerce-Price-currencySymbol">$</span>120.00</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                            <tfoot>
+
+                                            <tr class="cart-subtotal">
+                                                <th> Cart Subtotal</th>
+                                                <td><span class="woocommerce-Price-amount amount"><span
+                                                        class="woocommerce-Price-currencySymbol">$</span>135.00</span>
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr class="order-total">
+                                                <th>Total</th>
+                                                <td><strong><span class="woocommerce-Price-amount amount"><span
+                                                        class="woocommerce-Price-currencySymbol">$</span>135.00</span></strong>
+                                                </td>
+                                            </tr>
+
+
+                                            </tfoot>
+                                        </table>
+
+                                        <div id="payment" class="woocommerce-checkout-payment">
+                                            <ul class="wc_payment_methods payment_methods methods d-none">
+                                                <li class="wc_payment_method payment_method_bacs">
+                                                    <input id="payment_method_bacs" type="radio" class="input-radio"
+                                                           name="payment_method" value="bacs" checked="checked"
+                                                           data-order_button_text="">
+
+                                                    <label for="payment_method_bacs">
+                                                        Direct bank transfer </label>
+                                                    <div class="payment_box payment_method_bacs">
+                                                        <p>Make your payment directly into our bank account. Please use
+                                                            your Order ID as the payment reference. Your order will not
+                                                            be shipped until the funds have cleared in our account.</p>
+                                                    </div>
+                                                </li>
+                                                <li class="wc_payment_method payment_method_cheque">
+                                                    <input id="payment_method_cheque" type="radio" class="input-radio"
+                                                           name="payment_method" value="cheque"
+                                                           data-order_button_text="">
+
+                                                    <label for="payment_method_cheque">
+                                                        Check payments </label>
+                                                    <div class="payment_box payment_method_cheque"
+                                                         style="display:none;">
+                                                        <p>Please send a check to Store Name, Store Street, Store Town,
+                                                            Store State / County, Store Postcode.</p>
+                                                    </div>
+                                                </li>
+                                                <li class="wc_payment_method payment_method_cod">
+                                                    <input id="payment_method_cod" type="radio" class="input-radio"
+                                                           name="payment_method" value="cod" data-order_button_text="">
+
+                                                    <label for="payment_method_cod">
+                                                        Cash on delivery </label>
+                                                    <div class="payment_box payment_method_cod" style="display:none;">
+                                                        <p>Pay with cash upon delivery.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="form-row place-order ">
+                                                <noscript class="d-none">
+                                                    Since your browser does not support JavaScript, or it is disabled,
+                                                    please ensure you click the <em>Update Totals</em> button before
+                                                    placing your order. You may be charged more than the amount stated
+                                                    above if you fail to do so. <br/>
+                                                    <button type="submit" class="button alt"
+                                                            name="woocommerce_checkout_update_totals"
+                                                            value="Update totals">Update totals
+                                                    </button>
+                                                </noscript>
+
+                                                <div class="woocommerce-terms-and-conditions-wrapper d-none">
+                                                    <div class="woocommerce-privacy-policy-text"><p>Your personal data
+                                                        will be used to process your order, support your experience
+                                                        throughout this website, and for other purposes described in our
+                                                        <a href="http://localhost/urban_flavours/?page_id=3"
+                                                           class="woocommerce-privacy-policy-link" target="_blank">privacy
+                                                            policy</a>.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <button type="submit" class="btn custom-btn alt text-uppercase"
+                                                        name="woocommerce_checkout_place_order" id="place_order"
+                                                        value="Place order" data-value="Place order">Place order
+                                                </button>
+
+                                                <input type="hidden" id="woocommerce-process-checkout-nonce"
+                                                       name="woocommerce-process-checkout-nonce"
+                                                       value="da853815eb"><input type="hidden" name="_wp_http_referer"
+                                                                                 value="/urban_flavours/?wc-ajax=update_order_review">
+                                            </div>
+                                            <div class="text-center">
+                                                <p>*all taxes are included in the price. See <a href="" class="green-text text-uppercase"> FAQ</a></p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- /.main start  -->
+    <!-- /.footer start  -->
+    <footer class="footer">
+        <div class="footer-up">
+
+            <!-- /.footer-top start  -->
+            <div class="footer-top">
+
+
+                <div class=" text-center">
+                    <h3 class="white-text text-uppercase title"> URBAN FLAVOURS</h3>
+                </div>
+
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <h5 class="white-text text-uppercase">Contact info</h5>
+
+                            <ul class="list-unstyled contact-info">
+                                <li><p><i class="pe-7s-map-marker pe-lg pe-va"></i>Oakland, CA </p></li>
+                                <li><a href="tel: +1 (855) 635-2868"> <i class="pe-7s-call pe-lg pe-va"></i> +1 (855)
+                                    635-2868</a></li>
+                                <li><a href="mailto:urbanflavoursdelivery@gmail.com<"> <i
+                                        class="pe-7s-mail pe-lg pe-va"></i> urbanflavoursdelivery@gmail.com</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+
+                            <h5 class="text-uppercase white-text">Hours</h5>
+
+                            <p class="white-text">10 AM - 10 PM</p>
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <h5 class="text-uppercase white-text">Information</h5>
+
+                            <ul class="list-unstyled footer-menu">
+                                <li><a href="">Shop </a></li>
+                                <li><a href=""> Service Areas</a></li>
+                                <li><a href="">Cannabis News</a></li>
+                                <li><a href=""> Rewards</a></li>
+                                <li><a href=""> Contact us</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <h5 class="text-uppercase white-text">Newsletter</h5>
+
+                            <form class="form-inline">
+
+                                <div class="form-group  align-items-center d-block h-100">
+                                    <input type="email" class="form-control" placeholder="Enter your email...">
+                                    <button type="submit" class="btn custom-btn mb-2">Subscribe</button>
+                                </div>
+
+                            </form>
+
+                            <ul class="list-inline social">
+                                <li class="list-inline-item"><a href=""><i class="pe-so-facebook pe-lg pe-va"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href=""><i class="pe-so-twitter pe-lg pe-va"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href=""><i
+                                        class="pe-so-google-plus pe-lg pe-va"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="pe-so-skype pe-lg pe-va"></i></a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.footer-top start  -->
+
+        </div>
+
+        <!-- /.footer-bottom start  -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-lg-left text-md-left text-sm-center">
+                        <p>Copyright © <a class="green-text" href="">Urban Flavours</a>. All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-lg-right text-md-right text-sm-center">
+                        <p>License Number: A9-18-0000060-TEMP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.footer-bottom start  -->
+
+    </footer>
+    <!-- /.footer end  -->
+</div><!-- /.wrapper -->
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script src="js/functions.js"></script>
+</body>
+</html>
